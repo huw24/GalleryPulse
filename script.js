@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
         `;
  
         // 댓글 목록에 추가합니다.
-        commentList.appendChild(newComment);
+        commentList.insertBefore(newComment, commentList.firstChild);
  
         // 댓글과 별점을 로컬 스토리지에 저장합니다.
         saveComment(commentText, reviewStar.value);
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
                   ${getStarsHTML(reviewStar)} <p>${reviewContents}</p>
                </div>
             `;
-             commentList.insertBefore(newComment, commentList.childNodes[0]);
+            commentList.insertBefore(newComment, commentList.firstChild);
         });
     }
 
