@@ -61,7 +61,9 @@ document.addEventListener('DOMContentLoaded', function () {
     function loadComments() {
         // 저장된 댓글과 별점을 가져옵니다.
         const comments = JSON.parse(localStorage.getItem('comments')) || [];
- 
+
+        const reversedComments = comments.reverse();
+        
         // 각 댓글을 화면에 표시합니다.
         comments.forEach(({ reviewContents, reviewStar }) => {
             const newComment = document.createElement('div');
