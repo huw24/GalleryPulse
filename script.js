@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
                   ${getStarsHTML(reviewStar)} <p>${reviewContents}</p>
                </div>
             `;
-             commentList.insertBefore(newComment, commentList.firstChild);
+             commentList.insertBefore(newComment, commentList.childNodes[0]);
         });
     }
 
