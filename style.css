@@ -1,0 +1,61 @@
+.pics {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 42.5vw;
+    display: flex;
+    align-items: stretch; /* 각 이미지가 세로로 길어지더라도 높이를 stretch로 설정 */
+}
+
+.carousel-item {
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5%;
+}
+
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+.pics img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#comment-section {
+    margin-top: 30px;
+}
+
+#comment-form {
+    margin-bottom: 20px;
+}
+
+.comment-box {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
